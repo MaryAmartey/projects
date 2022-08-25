@@ -1,0 +1,99 @@
+/* Navigation(nav) styles*/
+.header {
+    height: 12vh;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    box-shadow: 0 2px 4px black;
+    padding-left: 2em;
+    
+}
+
+
+.left-side {
+    display: flex;
+}
+
+
+.nav-wrapper > .left-side > div {
+    margin-right: 0.8em;
+    font-size: 1.2rem;
+    text-transform:uppercase;
+    color:white;
+}
+
+.signature{
+    font-size: 1.2rem;
+    font-style:italic;
+    font-family: 'Satisfy', cursive;
+    color:white;
+    margin-top: 0.5em;
+}
+
+.nav-link-wrapper p {
+    color:black;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+}
+
+/*for floating button*/
+
+.navPrimary{
+    box-shadow: inset 0 0 2000px rgba(224, 223, 223, 0.5);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index:2;
+    position:fixed;
+    left:10%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap:0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease 0s;
+}
+
+.navPrimary:hover{
+    border: 2px solid rgb(253, 254, 254);
+    box-shadow: 0px 0px 18px #888888;
+}
+
+.navPrimary a{
+    text-decoration: none;
+    background: transparent;
+    color: rgb(18, 153, 108);
+    font-size: 1.1rem;
+}
+
+.navPrimary a:hover{
+    border-radius: 2rem;
+    text-shadow: 3rem;
+    color:rgb(18, 153, 108);
+}
+
+
+@media (min-width: 0px) {
+    .navPrimary{
+        left:20%;
+    }
+    
+}
+
+@media (min-width: 600px) {
+    .navPrimary{
+        left:14%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .navPrimary{
+        left:8%;
+    }
+}
