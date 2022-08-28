@@ -1,13 +1,22 @@
 import React from "react";
-import Main from "./components/main/Main.jsx"
+import TicTacToe from "./components/tictactoe/Tictactoe.jsx"
+import MemeGene from "./components/memeGene/MemeGene.jsx"
 
-function App() {
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+
+
+export default function App() {
   return (
     <div>
-      <Main/>
+      <Routes>
+         <Route path ='/' element = {<TicTacToe/>}/>
+         <Route path ='/memeGene' element = {<MemeGene/>}/>
+      </Routes>
       
     </div>
-  );
+  )
 }
 
-export default App;

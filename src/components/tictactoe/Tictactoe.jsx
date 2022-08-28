@@ -1,10 +1,10 @@
 import React from "react"
-import ".//main.css"
+import "./tictactoe.css"
 import { useState } from "react"
 import Navbar from "../navbar/Navbar"
 
 
-export default function Main(){
+export default function TicTacToe(){
     const X_CLASS='x'
     const CIRCLE_CLASS ='circle'
     const winMsgElement = document.getElementById('winningMessage')
@@ -95,7 +95,7 @@ export default function Main(){
     
     return(
     <>
-    <Navbar color="aquamarine"/>
+    <Navbar color="aquamarine" projectName="TicTacToe"/>
     <div className="board x" id="board" onClick={handleClick}>
         <div className="cell" data-cell></div>
         <div className="cell" data-cell></div>

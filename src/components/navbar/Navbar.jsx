@@ -8,7 +8,7 @@ export default function Navbar(props){
         <nav className="header" style={{backgroundColor: props.color}}>
             <div className="nav-wrapper">
                 <div className="nav-link-wrapper left-side">
-                    <p>TicTacToe</p>
+                    <p>{props.projectName}</p>
                 </div>
 
                 <p className="right-side signature">MARY AMARTEY </p>
@@ -16,8 +16,8 @@ export default function Navbar(props){
             </div>
         </nav>
         <div className="navPrimary">
-            <HiDocument style={{color:"rgb(18, 153, 108)",fontSize:"1.2rem", paddingTop:"0.05rem"}}/>
-           <a href="https://mksportfolio.netlify.app">View Portfolio</a>
+            <HiDocument style={{color:"purple",fontSize:"1.2rem", paddingTop:"0.05rem"}}/>
+           <a href="https://mksportfolio.netlify.app" style={{color:"purple"}}>View Portfolio</a>
         </div>
         </>
     )
