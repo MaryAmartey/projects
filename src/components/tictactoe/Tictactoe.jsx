@@ -95,7 +95,9 @@ export default function TicTacToe(){
     
     return(
     <>
-    <Navbar color="aquamarine" projectName="TicTacToe"/>
+    <Navbar color="aquamarine" projectName="TicTacToe"
+            nextProject="Meme Generator" 
+            linkname="memeGene"/>
     <div className="board x" id="board" onClick={handleClick}>
         <div className="cell" data-cell></div>
         <div className="cell" data-cell></div>

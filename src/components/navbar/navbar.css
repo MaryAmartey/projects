@@ -41,6 +41,15 @@
     margin-top: 0.5em;
 }
 
+.projLink{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.projLink:hover{
+    text-decoration: underline;
+}
 /*for floating button*/
 
 .navPrimary{

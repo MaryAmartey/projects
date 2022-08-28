@@ -51,7 +51,8 @@ export default function MemeGene(){
     
     return(
         <>
-        <Navbar color="purple" projectName="Meme Generator"/>
+        <Navbar color="purple" projectName="Meme Generator" nextProject="Tictactoe" 
+        linkname="/"/>
         
             <main>
             <div className="form">
